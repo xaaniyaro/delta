@@ -1,0 +1,104 @@
+.container{
+    height: 100%;
+    margin: 0;
+}
+
+.listcontainer{
+    width: 300px;
+}
+
+.listheader{
+    background-color: #dea900;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.list{
+    padding: 10px 5px 0 10px;
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.listicon{
+    vertical-align: middle;
+}
+
+.usericon{
+    transform: scale(1.5);
+    padding-left: 15px;
+}
+
+header{
+    background-color: #dea900;
+    padding: 15px 30px 15px 30px ;
+    font-size: 18px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notifyicon {
+    transform: scale(1);
+}
+
+.menuicon{
+    transform: scale(2);
+}
+
+.menucontainer{
+    flex-grow: 0.3;
+}
+
+.iconscontainer{
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shortcuts{
+    display: flex;
+    justify-content: space-around;
+    background-color: gainsboro;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+}
+
+.btn{
+    margin-top: 20px;
+    height: 150px;
+    width: 80%;
+    font-size: 30px;
+}
+
+.iconsize{
+    transform: scale(4);
+    padding-bottom: 10px;
+    color: black;
+}
+
+.iconsizetsk{
+    transform: scale(4);
+    color: black;
+}
+
+.buttoncontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.listheader{
+
+}

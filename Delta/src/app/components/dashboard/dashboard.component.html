@@ -1,0 +1,35 @@
+<mat-drawer-container class="container" hasBackdrop="true">
+    <mat-drawer #drawer mode="over">
+        <div class="listcontainer">
+            <div class="listheader">
+                <mat-icon class="usericon" svgIcon="user"></mat-icon> 
+                <div> Nombre perfil</div>
+                <div (click)="drawer.toggle()"> < </div>
+            </div>
+            <div class="list" (click)="onClick('home/welcome')"><mat-icon class="listicon" svgIcon="home"></mat-icon> Inicio</div>
+            <div class="list" (click)="onClick('home/tasks')"><mat-icon class="listicon" svgIcon="tasks" ></mat-icon> Mis tareas</div>
+            <div class="list" (click)="onClick('home/tracking')"><mat-icon class="listicon" svgIcon="truck" ></mat-icon> Tracking</div>
+            <div class="list" (click)="onClick('home/graphs')"><mat-icon class="listicon" svgIcon="pie" ></mat-icon> Gráficos</div>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <header>
+            <div class="menucontainer">
+            <mat-icon class="menuicon" mat-raised-button (click)="drawer.toggle()" aria-hidden="false">menu</mat-icon>
+            </div>
+            <div class="iconscontainer">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" width="30px" height="30px" />
+            <mat-icon class="notifyicon" matBadge="2" matBadgeColor="warn" matBadgeSize="small" matBadgePosition="below after">notifications</mat-icon>
+            </div>
+        </header>
+        <div class="shortcuts">
+            <div>
+                Atajo 1
+            </div>
+            <div>
+                Atajo 2
+            </div>
+        </div>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

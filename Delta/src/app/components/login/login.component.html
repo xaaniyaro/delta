@@ -1,0 +1,29 @@
+<div class="root">
+    <div class="logocontainer">
+        <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" width="90px" height="90px" />
+    </div>
+    <div class="welcome">
+        ¡Hola! bienvenidos a XXXX.
+        <br/>
+        Para ingresar es necesario iniciar sesión
+    </div>
+    <div class="inputs">
+        <form >
+            <mat-form-field class="input">
+                <mat-label>Usuario o correo electrónico <span class="asterix">*</span></mat-label>
+                <input matInput type="email">
+            </mat-form-field>
+            <mat-form-field class="input">
+                <mat-label>Contraseña <span class="asterix">*</span></mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </mat-form-field>
+        </form>
+    </div>
+    <div class="buttoncontainer">
+        <button mat-flat-button color="primary" type="submit" (click)="onClick('home/welcome')">Iniciar sesión</button>
+    </div>
+    <div class="footer">
+        Olvidé mi contraseña <a href="#">¡Recupérala!</a>
+    </div>
+</div>
